@@ -2,11 +2,11 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #333;
+    color: #ffffff;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -128,4 +128,57 @@ footer {
 
 .social li a:hover {
     text-decoration: underline;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below images */
+}
+
+/* Styles for specific sections */
+.hero img {
+    max-width: 80%; /* Adjust image width for hero section */
+    margin-right: auto; /* Align image to the left */
+}
+
+.services .service img {
+    width: 100%; /* Make sure images fill their containers in services section */
+    max-width: 300px; /* Limit the maximum width of service images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space below service images */
+    margin-right: auto; /* Align image to the left */
+}
+/* styles.css */
+
+/* Background video styling */
+.background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Ensure the video stays behind other content */
+}
+
+/* Image Hover Effect */
+.bgimage {
+    position: relative;
+    overflow: hidden;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bgimage img {
+    display: block;
+    transition: transform 0.3s ease; /* Apply transition effect */
+
+}
+
+.bgimage:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
 }
